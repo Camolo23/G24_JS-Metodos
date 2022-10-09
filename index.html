@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://kit.fontawesome.com/12df2bc3b5.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/favIcon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-secondary">
+    <header class="m-3 border-bottom border-dark">
+        <h1>To Do List</h1>
+    </header>
+    <section id="ingresar-tareas" class="m-4">
+        <h3>Nueva tarea</h3>
+        <div class="input-group mb-3">
+            <input id="new-task-input" type="text" class="form-control border-dark"
+                placeholder="Ingrese su nueva tarea">
+            <button id="add-task" class="btn btn-outline-dark fs-4" type="button">Agregar</button>
+        </div>
+    </section>
+    <main class="d-flex m-3 justify-content-between">
+        <div id="resumen-tareas">
+            <p class="mb-0">Total: <span id="task-counter">0</span></p>
+            <p>Realizadas: <span id="finished">0</span></p>
+        </div>
+        <div class="d-flex justfy-content-end me-5 pe-5 w-50">
+            <table class="table table-borderless table-dark table-hover h-25">
+                <thead>
+                    <tr>
+                        <th class="h-auto" scope="col">ID</th>
+                        <th class="h-auto" scope="col">Tarea</th>
+                        <th class="h-auto" scope="col">Estado</th>
+                        <th class="h-auto" scope="col">Borrar</th>
+                    </tr>
+                </thead>
+                <tbody id="task-table">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
